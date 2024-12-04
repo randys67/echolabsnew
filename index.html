@@ -1,0 +1,59 @@
+<html lang="en" data-arp=""><head>
+    <meta name="sentry-trace" content="dbf5b97f1b40413395f985360226c08f-849e7d17be91ec0a-1">
+    <meta name="baggage" content="sentry-environment=production,sentry-release=1d5da2e1d7b518ddb77e8fc86c19d8192f2627b7,sentry-public_key=f847a05898d50e63d85098536a6e214d,sentry-trace_id=dbf5b97f1b40413395f985360226c08f,sentry-sample_rate=1,sentry-transaction=GET%20%2F(auth)%2Flogin,sentry-sampled=true">
+    
+<script>
+    const f = window.fetch;
+    if(f){
+      window._sentryFetchProxy = function(...a){return f(...a)}
+      window.fetch = function(...a){return window._sentryFetchProxy(...a)}
+    }
+</script>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://portal.el.ai/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+		<link href="./_app/immutable/assets/0.5e690c77.css" rel="stylesheet">
+    <style>
+      #sveltekit-body {
+        display: contents;
+      }
+    </style>
+    <noscript>
+      <style>
+        #sveltekit-body {
+          display: none;
+        }
+      </style>
+    </noscript>
+  <link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/nodes/0.74be7ce0.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/scheduler.e81bb454.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/index.51d04910.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/Toaster.12ebc08d.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/each.4ab6c90b.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/index.4ee8d407.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/singletons.cd37b760.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/navigation.33c06691.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/stores.e8125a3e.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/nodes/1.52a9dca5.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/nodes/6.57e639ae.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/TextField.9b568f60.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/index.ec70f40e.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/forms.fbfb2f99.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/parse.7d180a0f.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/environment.07c54b58.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/HiddenField.4af11883.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/Submit.ae06a3b6.js"><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/chunks/schemas.68c1b8d2.js"><script>
+  console.log("start patch Notification");
+
+  const OldNotify = window.Notification;
+  const newNotify = function (title, opt) {
+    const instance = new OldNotify(title, opt);
+    window.postMessage({action: "notification", data: {config: opt}});
+    return instance;
+  };
+  newNotify.requestPermission = OldNotify.requestPermission.bind(OldNotify);
+  newNotify.toString = OldNotify.toString.bind(OldNotify);
+  Object.defineProperty(newNotify, 'permission', {
+    get: () => OldNotify.permission,
+  });
+  Object.defineProperty(newNotify, 'maxActions', {
+    get: () => OldNotify.maxActions,
+  });
+  Object.defineProperty(newNotify, 'name', {
+    get: () => OldNotify.name,
+  });
+
+  window.Notification = newNotify;
+  </script><link rel="modulepreload" as="script" crossorigin="" href="https://portal.el.ai/_app/immutable/nodes/9.e5eaf47e.js"></head>
+  <body data-sveltekit-preload-data="hover">
+    <div id="sveltekit-body"> <section class="bg-gray-700 bg-opacity-60 bg-[url('/pexels.jpg')] bg-cover bg-center bg-no-repeat bg-blend-multiply"><div class="pt:mt-0 mx-auto flex flex-col items-center justify-center px-6 py-8 md:h-screen"><div class="flex items-center justify-center px-4 py-6 sm:px-0 lg:py-14"><div class="items-center space-y-2 rounded-lg border-2 bg-white px-6 py-1 shadow-md sm:px-8 sm:py-6 lg:space-y-5"><a href="https://el.ai" class="flex items-center lg:order-2 lg:justify-center"><img src="/logo.png" alt="echo labs logo" class="shadow-md" style="width: 50px; height: 50px;"></a> <h1 class="text-center text-2xl font-bold leading-tight tracking-tight text-gray-900 sm:text-2xl">Signup</h1> <form class="space-y-4 lg:space-y-5" method="POST"><div class="flex flex-col"><label for="email" class="text-sm font-medium text-gray-900">Email</label> <input name="email" class="sm:text-md focus:border-primary-600 focus:ring-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 read-only:cursor-default read-only:bg-gray-100 read-only:text-gray-400 " placeholder="gstrang@mit.edu"> <div class="text-sm text-red-500"> </div></div> <div class="flex flex-col"><label for="password" class="text-sm font-medium text-gray-900">Password</label> <input name="password" type="password" class="sm:text-md focus:border-primary-600 focus:ring-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 read-only:bg-gray-100 read-only:text-gray-400 " placeholder="•••••••••"> <div class="text-sm text-red-500"><div class="text-sm text-gray-500">Password should be at least 8 characters.</div> </div></div> <div class="flex flex-col"><label for="confirm" class="text-sm font-medium text-gray-900">Confirm Password</label> <input name="confirm" type="password" class="sm:text-md focus:border-primary-600 focus:ring-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 read-only:bg-gray-100 read-only:text-gray-400 " placeholder="•••••••••"> <div class="text-sm text-red-500"> </div></div> <input type="hidden" name="agreedToTos" value="true"> <input type="hidden" name="referralKey" value=""> <button disabled="" type="submit" class="focus:ring-primary-300 text-md w-full rounded-2xl bg-black px-5 py-2.5 text-center font-medium text-white shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-4 disabled:bg-gray-400">Create an account</button> </form> <div class="px-4"><hr class="my-3 h-px border-0 bg-gray-300"></div> <div>Already have an account?<br> <a class="text-blue-500 hover:underline" href="/login">Click here to login.</a></div></div></div></div></section> <div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0px; top: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px;">untitled page</div></div>
+    <noscript>
+      <div>Please enable javascript to access this site.</div>
+    </noscript>
+  
+
+<div style="z-index: 60" class="fixed bottom-2 right-0 flex flex-col-reverse items-end" data-portal=""></div></body></html>
